@@ -5,7 +5,7 @@
   
 - Desde el cmd en la carpeta  c:xampp\htdocs :
 
-  git clone https://github.com/rogniella/geshorario.git
+  git clone https://github.com/emis23/geshorarioemilce2.git
         
 - Ir a la Carpeta generada  GesHorario y correr para que se genere proyecto:
 
