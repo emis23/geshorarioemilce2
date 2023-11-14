@@ -5,7 +5,7 @@
 	<div class="container">
 
 		<div class="panel-heading text-center">
-			<h3 class="panel-title">Lista de asistencias</h3>
+			<h3 class="panel-title">Lista de asistencias emi</h3>
 		</div>
 
 
