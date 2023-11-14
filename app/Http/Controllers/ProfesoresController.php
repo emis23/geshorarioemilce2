@@ -31,11 +31,11 @@ class ProfesoresController extends Controller
 
 
       // $datos = profesor::buscarDni($resquest->dni);
-      $datos = (object) ['dni'=> $resquest->dni,
-             'apellido'=> $resquest->name,];
+      $datos = (object) ['dni'=> $request->dni,
+             'apellido'=> $request->name,];
 
             
-      if ($resquest->dni == 1){
+      if ($request->dni == 1){
           flash::error("Error: No esta Registrado " );
           return view('profesores.registro' );
       } else {
