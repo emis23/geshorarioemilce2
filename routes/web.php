@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfesoresController;
+use App\Http\Controllers\AsistenciasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,10 @@ use App\Http\Controllers\ProfesoresController;
 |
 */
 
+//ASISTENCIAS
+Route::controller(AsistenciasController::class)->group(function () {
+    Route::get('asistencias/index', 'index')->name('asistencias.index');
+});
 
 //PROFESORES
     Route::controller(ProfesoresController::class)->group(function () {
