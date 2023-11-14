@@ -11,13 +11,10 @@
                             <h5 class="card-title">Entrada Registrada:</h5>
                             <ul class="list-group">
                                 <li class="list-group-item">DNI: {{ $datos->dni }}</li>
-                                <li class="list-group-item">Apellido: {{ $datos->apellido }}</li>
-                                <li class="list-group-item">Fecha: {{ $datos->fecha_entrada }}</li>
-                                <li class="list-group-item">Hora: {{ $datos->hora_entrada }}</li>
-                               
+                                <li class="list-group-item">Apellido y Nombre: {{ $datos->name }}</li>
                             </ul>
                             <br>
-                            <button type="submit" class="btn btn-primary">Aceptar</button>
+                            <a href="{{ route('profesores.registro') }}" class="btn btn-primary">Aceptar</a>
                         </div>
                     </div>
                 </div>
