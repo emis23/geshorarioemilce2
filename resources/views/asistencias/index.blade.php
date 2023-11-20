@@ -7,6 +7,12 @@
 		<div class="panel-heading text-center">
 			<h3 class="panel-title">Lista de asistencias emi</h3>
 		</div>
+		<div> 
+		<div style="width: 20%;" class=""> 
+		<label ></label>
+			<input type="text" id="inputapellido"  class= "form-control"placeholder="Buscar Apellido" data-index="1">                 
+		           
+		</div>
 
 
 		<table class="table table-hover" id="mitabla">
@@ -32,13 +38,13 @@
 
 @endsection()
 
-@section('scrip')
+@section('script')
 
 <script>
 
 // Si definimos asi va para todas las tablas del proyecto
 $.extend(true, $.fn.dataTable.defaults, {
-	searching: false,
+	searching: true,
 	ordering: true, 
 });
 
@@ -47,17 +53,23 @@ $(document).ready(function () {
    //Inicia con valores por defecto  $('#mitabla').DataTable();
 
    // Definimos para 1 tabla en particular
-	$('#mitabla').DataTable({
-		 searching: true,
-		 dom: '<"toolbar">ftip',
-		 language: {
-         	url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json',
-    },
+	const table = $('#mitabla').DataTable({
+		dom: 'rtip',
+			language: {
+			url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json',
+		},
 	});
-
+	
+	
 	$('div.toolbar').html('');
 
+	$("#inputapellido").keyup(function() {
+        table.column($(this).data("index")).search(this.value).draw();
+    });
 });
+
+
+
 
 </script>
 
