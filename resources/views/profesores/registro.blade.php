@@ -32,7 +32,7 @@
             </div>
 
             <div class="input-group input-group-sm mb-3">
-              <input id="dni" type="text" name="dni" class="form-control" value="" placeholder="Ingrese Dni" aria-label="Sizing example input"aria-describedby="inputGroup-sizing-sm" required  autofocus></p>
+              <input id="dni" type="text" name="dni" class="form-control" value="" placeholder="Ingrese usuario" aria-label="Sizing example input"aria-describedby="inputGroup-sizing-sm" required  autofocus></p>
             </div>
             
             <!-- <div class="input-group input-group-sm mb-3">
