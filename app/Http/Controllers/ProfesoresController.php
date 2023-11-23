@@ -50,7 +50,7 @@ class ProfesoresController extends Controller
        'name' => $profe->apellidonombre
          ];
  
-       Flash::success("Se ha registrado de manera exitosa ! Id:" . $request->dni );
+       Flash::success("Se ha registrado de manera exitosa " . $request->dni );
        return view('profesores.registro_confirmacion')->with('datos', $datos );
    
        

@@ -10,8 +10,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Entrada Registrada:</h5>
                             <ul class="list-group">
-                                <li class="list-group-item">Apellido y Nombre:  {{ $datos->name }}</li>
-                                <li class="list-group-item">DNI:  {{ $datos->dni}}</li>
+                                <li class="list-group-item">Apellido y Nombre:  {{ $datos->dni }}</li>
+                                 
                             </ul>
                             <br>
                             <a href="{{ route('profesores.registro') }}" class="btn btn-primary">Aceptar</a>
