@@ -20,7 +20,7 @@
   <label for="mypassword">Repetir Nueva Contraseña:</label>
   <input type="password" name="password_confirmation" class="form-control">
  </div>
- <button type="submit" class="btn btn-primary">Cambiar Contrasena</button>
+ <button type="submit" class="btn btn-primary">Cambiar Contraseña</button>
 </form>
 
 @endsection
