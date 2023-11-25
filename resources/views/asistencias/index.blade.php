@@ -49,7 +49,7 @@ $(document).ready(function () {
 		dom: '<"col-md-1"f> tlp',
 		language: {
             url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json',
-    	},
+    	}, 
 	});
 
 	$('div.toolbar').html('');
